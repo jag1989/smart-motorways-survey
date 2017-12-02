@@ -1,0 +1,48 @@
+{
+	"name": "EdwardCrowtherSurvey",
+	"version": "1.0.0",
+	"description": "Edward Crowthers Dissertation Survey",
+	"main": "index.html",
+	"scripts": {
+		"launch": "rm -rf assets && gulp compile && http-server -o"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/jag1989/garrettj.git"
+	},
+	"author": "Jonathan Garrett",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/jag1989/garrettj/issues"
+	},
+	"homepage": "https://github.com/jag1989/garrettj#readme",
+	"devDependencies": {
+		"autoprefixer": "^7.1.6",
+		"babel-core": "^6.26.0",
+		"babel-preset-es2015": "^6.24.1",
+		"browserslist": "^2.8.0",
+		"css-loader": "^0.28.7",
+		"cssnano": "^3.10.0",
+		"gulp": "^3.9.1",
+		"gulp-clean": "^0.3.2",
+		"gulp-cssnano": "^2.1.2",
+		"gulp-dest": "^0.2.3",
+		"gulp-imagemin": "^3.4.0",
+		"gulp-postcss": "^7.0.0",
+		"gulp-sass": "^3.1.0",
+		"gulp-stylelint": "^5.0.0",
+		"http-server": "^0.10.0",
+		"lighthouse": "^2.5.0",
+		"node-sass": "^4.5.3",
+		"normalize.css": "^7.0.0",
+		"postcss-loader": "^2.0.6",
+		"postcss-reporter": "^5.0.0",
+		"postcss-scss": "^1.0.2",
+		"sass-loader": "^6.0.6",
+		"style-loader": "^0.18.2",
+		"stylelint": "^8.2.0"
+	},
+	"dependencies": {
+		"normalize-scss": "^7.0.0"
+	}
+}

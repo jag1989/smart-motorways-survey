@@ -1,0 +1,681 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Edward Crowther</title>
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet">
+	<link rel="stylesheet" href="assets/css/style.min.css" />
+	<script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
+	    crossorigin="anonymous"></script>
+	<script src="src/js/icheck.min.js"></script>
+	<script src="src/js/script.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.4/js/select2.min.js"></script>
+</head>
+
+<body>
+
+	<header class="box-shadow">
+		<div class="container">
+			<h1 class="header font-light">Smart Motorways Questionnaire</h1>
+		</div>
+	</header>
+
+	<main>
+		<div class="container">
+			<div class="content content--spaced font-mid">
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet tempore, nostrum iusto minus modi illo tempora. Accusamus
+					amet aliquam consequatur corrupti, fugiat eos ex obcaecati adipisci eligendi sint temporibus repellat!</p>
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores voluptatem laboriosam quis quidem explicabo, distinctio
+					ipsum voluptatibus optio culpa quos inventore at maxime enim, aliquam labore praesentium quae. Consectetur, fugit?</p>
+			</div>
+
+			<form id="smart-motorways-questionnaire">
+
+				<fieldset id="personal">
+					<h2>About You</h2>
+					<div class="form-input">
+						<h3>1. Do you hold a valid driving licence?</h3>
+						<div class="form-options">
+							<div class="form-group">
+								<input type="radio" id="uk-license-y" name="uk-license-holder">
+								<label for="uk-license-y">Yes</label>
+							</div>
+							<div class="form-group">
+								<input type="radio" id="uk-license-n" name="uk-license-holder">
+								<label for="uk-license-n">No</label>
+							</div>
+							<div class="form-group">
+								<input type="radio" id="foreign-license" name="uk-license-holder">
+								<label for="foreign-license">Foreign license valid in UK</label>
+							</div>
+						</div>
+					</div>
+					<div class="form-input">
+						<h3>2. Are you a resident of the UK?</h3>
+						<div class="form-options">
+							<div class="form-group">
+								<input type="radio" id="uk-resident-y" name="uk-resident">
+								<label for="uk-resident-y">Yes</label>
+							</div>
+							<div class="form-group">
+								<input type="radio" id="uk-resident-n" name="uk-resident">
+								<label for="uk-resident-y">No</label>
+							</div>
+						</div>
+					</div>
+					<div class="form-input">
+						<h3 for="personal-county">3. Where do you live?</h3>
+						<div class="form-options form-options--third">
+							<select name="county" id="personal-country">
+								<option>Bedfordshire</option>
+								<option>Berkshire</option>
+								<option>Bristol</option>
+								<option>Buckinghamshire</option>
+								<option>Cambridgeshire</option>
+								<option>Cheshire</option>
+								<option>City of London</option>
+								<option>Cornwall</option>
+								<option>Cumbria</option>
+								<option>Derbyshire</option>
+								<option>Devon</option>
+								<option>Dorset</option>
+								<option>Durham</option>
+								<option>East Riding of Yorkshire</option>
+								<option>East Sussex</option>
+								<option>Essex</option>
+								<option>Gloucestershire</option>
+								<option>Greater London</option>
+								<option>Greater Manchester</option>
+								<option>Hampshire</option>
+								<option>Herefordshire</option>
+								<option>Hertfordshire</option>
+								<option>Isle of Wight</option>
+								<option>Kent</option>
+								<option>Lancashire</option>
+								<option>Leicestershire</option>
+								<option>Lincolnshire</option>
+								<option>Merseyside</option>
+								<option>Norfolk</option>
+								<option>North Yorkshire</option>
+								<option>Northamptonshire</option>
+								<option>Northumberland</option>
+								<option>Nottinghamshire</option>
+								<option>Oxfordshire</option>
+								<option>Rutland</option>
+								<option>Shropshire</option>
+								<option>Somerset</option>
+								<option>South Yorkshire</option>
+								<option>Staffordshire</option>
+								<option>Suffolk</option>
+								<option>Surrey</option>
+								<option>Tyne and Wear</option>
+								<option>Warwickshire</option>
+								<option>West Midlands</option>
+								<option>West Sussex</option>
+								<option>West Yorkshire</option>
+								<option>Wiltshire</option>
+								<option>Worcestershire</option>
+							</select>
+						</div>
+					</div>
+					<div class="form-input">
+						<h3>4. How old are you?</h3>
+						<div class="form-options">
+							<div class="form-group">
+								<input type="radio" id="age-range-1" name="personal-age">
+								<label for="age-range-1">17 - 24</label>
+							</div>
+							<div class="form-group">
+								<input type="radio" id="age-range-2" name="personal-age">
+								<label for="age-range-2">25 - 44</label>
+							</div>
+							<div class="form-group">
+								<input type="radio" id="age-range-3" name="personal-age">
+								<label for="age-range-3">45 - 64</label>
+							</div>
+							<div class="form-group">
+								<input type="radio" id="age-range-4" name="personal-age">
+								<label for="age-range-4">65+</label>
+							</div>
+						</div>
+					</div>
+					<div class="form-input">
+						<h3>5. How long have you been driving?</h3>
+						<div class="form-options">
+							<div class="form-group">
+								<input type="radio" id="driving-range-1" name="driving-length">
+								<label for="driving-range-1">0-2 Years</label>
+							</div>
+							<div class="form-group">
+								<input type="radio" id="driving-range-2" name="driving-length">
+								<label for="driving-range-2">3-5 Years</label>
+							</div>
+							<div class="form-group">
+								<input type="radio" id="driving-range-3" name="driving-length">
+								<label for="driving-range-3">6-8 Years</label>
+							</div>
+							<div class="form-group">
+								<input type="radio" id="driving-range-4" name="driving-length">
+								<label for="driving-range-4">9-11 Years</label>
+							</div>
+							<div class="form-group">
+								<input type="radio" id="driving-range-5" name="driving-length">
+								<label for="driving-range-5">12+ Years</label>
+							</div>
+						</div>
+					</div>
+					<div class="form-input">
+						<h3>6. On average, how many miles per year do you drive?</h3>
+						<div class="form-options">
+							<div class="form-group">
+								<input type="radio" id="personal-6-1" name="miles-per-annum">
+								<label for="personal-6-1">&lt2,000</label>
+							</div>
+							<div class="form-group">
+								<input type="radio" id="personal-6-2" name="miles-per-annum">
+								<label for="personal-6-2">2,000 - 5,000</label>
+							</div>
+							<div class="form-group">
+								<input type="radio" id="personal-6-3" name="miles-per-annum">
+								<label for="personal-6-3">5,000 - 10,000</label>
+							</div>
+							<div class="form-group">
+								<input type="radio" id="personal-6-4" name="miles-per-annum">
+								<label for="personal-6-4">10,000 - 20,000</label>
+							</div>
+							<div class="form-group">
+								<input type="radio" id="personal-6-5" name="miles-per-annum">
+								<label for="personal-6-5">20,000+</label>
+							</div>
+						</div>
+					</div>
+				</fieldset>
+
+				<fieldset id="general">
+					<h2>Smart Motorways in General</h2>
+					<div class="form-input">
+						<h3>1. To your knowledge, have you ever driven on a Smart Motorway?</h3>
+						<div class="form-options">
+							<div class="form-group">
+								<input type="radio" id="general-1-y" name="general-1">
+								<label for="general-1-y">Yes</label>
+							</div>
+							<div class="form-group">
+								<input type="radio" id="general-1-n" name="general-1">
+								<label for="general-1-n">No</label>
+							</div>
+							<div class="form-group">
+								<input type="radio" id="general-1-ns" name="general-1">
+								<label for="general-1-ns">Not sure</label>
+							</div>
+						</div>
+					</div>
+					<div class="form-input">
+						<h3>2. If yes, how often would you say you use a Smart Motorway?</h3>
+						<div class="form-options form-options--spread">
+							<div class="form-group">
+								<input type="radio" id="general-2-often" name="general-2">
+								<label for="general-2-often">Often</label>
+							</div>
+							<div class="form-group">
+								<input type="radio" id="general-2-sometimes" name="general-2">
+								<label for="general-2-sometimes">Sometimes</label>
+							</div>
+							<div class="form-group">
+								<input type="radio" id="general-2-rarely" name="general-2">
+								<label for="general-2-rarely">Rarely</label>
+							</div>
+							<div class="form-group">
+								<input type="radio" id="general-2-never" name="general-2">
+								<label for="general-2-never">Never</label>
+							</div>
+							<div class="form-group">
+								<input type="radio" id="general-2-not-sure" name="general-2">
+								<label for="general-2-not-sure">Not sure</label>
+							</div>
+						</div>
+					</div>
+					<div class="form-input">
+						<h3>3. Irrespective of your experience on a Smart Motorway, how well would you say you understand their purpose?</h3>
+						<div class="form-options form-options--spread">
+							<div class="form-group">
+								<input type="radio" id="general-3-extremely" name="general-3">
+								<label for="general-3-extremely">Extremely</label>
+							</div>
+							<div class="form-group">
+								<input type="radio" id="general-3-very" name="general-3">
+								<label for="general-3-very">Very</label>
+							</div>
+							<div class="form-group">
+								<input type="radio" id="general-3-moderately" name="general-3">
+								<label for="general-3-moderately">Moderately</label>
+							</div>
+							<div class="form-group">
+								<input type="radio" id="general-3-slightly" name="general-3">
+								<label for="general-3-slightly">Slightly</label>
+							</div>
+							<div class="form-group">
+								<input type="radio" id="general-3-not-at-all" name="general-3">
+								<label for="general-3-not-at-all">Not at all</label>
+							</div>
+						</div>
+					</div>
+					<div class="form-input">
+						<h3>4. Which of the following is a Smart Motorway?
+							<small>(You can choose more than one)</small>
+						</h3>
+						<div class="form-options form-options--spread">
+							<div class="form-group">
+								<input type="checkbox" id="general-4-1" name="general-4">
+								<label for="general-4-1">
+									<img src="https://placeimg.com/200/200/arch">No hard shoulder, variable speed limits</label>
+							</div>
+							<div class="form-group">
+								<input type="checkbox" id="general-4-2" name="general-4">
+								<label for="general-4-2">
+									<img src="https://placeimg.com/200/200/arch">Permanent hard shoulder, advisory speed displays</label>
+							</div>
+							<div class="form-group">
+								<input type="checkbox" id="general-4-3" name="general-4">
+								<label for="general-4-3">
+									<img src="https://placeimg.com/200/200/arch">Hard shoulder occasionally open during congestion</label>
+							</div>
+							<div class="form-group">
+								<input type="checkbox" id="general-4-4" name="general-4">
+								<label for="general-4-4">
+									<img src="https://placeimg.com/200/200/arch">Permanent hard shoulder, variable speed limits</label>
+							</div>
+							<div class="form-group">
+								<input type="checkbox" id="general-4-5" name="general-4">
+								<label for="general-4-5">
+									<img src="https://placeimg.com/200/200/arch">All</label>
+							</div>
+						</div>
+					</div>
+					<div class="form-input">
+						<h3>5. Would you say Smart Motorways successfully improve safety?</h3>
+						<div class="form-options form-options--spread">
+							<div class="form-group">
+								<input type="radio" id="general-5-strongly-agree" name="general-5">
+								<label for="general-5-strongly-agree">Strongly Agree</label>
+							</div>
+							<div class="form-group">
+								<input type="radio" id="general-5-agree" name="general-5">
+								<label for="general-5-agree">Agree</label>
+							</div>
+							<div class="form-group">
+								<input type="radio" id="general-5-undecided" name="general-5">
+								<label for="general-5-undecided">Undecided</label>
+							</div>
+							<div class="form-group">
+								<input type="radio" id="general-5-disagree" name="general-5">
+								<label for="general-5-disagree">Disagree</label>
+							</div>
+							<div class="form-group">
+								<input type="radio" id="general-5-strongly-disagree" name="general-5">
+								<label for="general-5-strongly-disagree">Strongly Disagree</label>
+							</div>
+						</div>
+					</div>
+					<div class="form-input">
+						<h3>6. Would you say Smart Motorways successfully reduce congestion?</h3>
+						<div class="form-options form-options--spread">
+							<div class="form-group">
+								<input type="radio" id="detail-11-strongly-agree" name="detail-11">
+								<label for="detail-11-strongly-agree">Strongly Agree</label>
+							</div>
+							<div class="form-group">
+								<input type="radio" id="detail-11-agree" name="detail-11">
+								<label for="detail-11-agree">Agree</label>
+							</div>
+							<div class="form-group">
+								<input type="radio" id="detail-11-undecided" name="detail-11">
+								<label for="detail-11-undecided">Undecided</label>
+							</div>
+							<div class="form-group">
+								<input type="radio" id="detail-11-disagree" name="detail-11">
+								<label for="detail-11-disagree">Disagree</label>
+							</div>
+							<div class="form-group">
+								<input type="radio" id="detail-11-strongly-disagree" name="detail-11">
+								<label for="detail-11-strongly-disagree">Strongly Disagree</label>
+							</div>
+						</div>
+					</div>
+				</fieldset>
+
+				<fieldset id="detail">
+					<h2>Smart Motorways in Detail</h2>
+					<div class="form-input">
+						<h3>1. A red X displayed above a lane on the overhead gantries means that lane is closed to traffic</h3>
+						<div class="form-options">
+							<div class="form-group">
+								<input type="radio" id="detail-1-1" name="detail-1">
+								<label for="detail-1-1">I knew that</label>
+							</div>
+							<div class="form-group">
+								<input type="radio" id="detail-1-2" name="detail-1">
+								<label for="detail-1-2">I would have guessed that.</label>
+							</div>
+							<div class="form-group">
+								<input type="radio" id="detail-1-3" name="detail-1">
+								<label for="detail-1-3">I don’t know</label>
+							</div>
+							<div class="form-group">
+								<input type="radio" id="detail-1-4" name="detail-1">
+								<label for="detail-1-4">I did not know that</label>
+							</div>
+						</div>
+					</div>
+					<div class="form-input">
+						<h3>2. Is driving under a red X against the law?</h3>
+						<div class="form-options">
+							<div class="form-group">
+								<input type="radio" id="red-x-law-y" name="detail-red-x-law">
+								<label for="red-x-law-y">Yes</label>
+							</div>
+							<div class="form-group">
+								<input type="radio" id="red-x-law-n" name="detail-red-x-law">
+								<label for="red-x-law-n">No</label>
+							</div>
+							<div class="form-group">
+								<input type="radio" id="red-x-law-ns" name="detail-red-x-law">
+								<label for="red-x-law-ns">Not sure</label>
+							</div>
+						</div>
+					</div>
+					<div class="form-input">
+						<h3>3. Are speed limits displayed in a red ring are mandatory?</h3>
+						<div class="form-options">
+							<div class="form-group">
+								<input type="radio" id="speed-limits-mandatory-y" name="detail-red-ring-mandatory">
+								<label for="speed-limits-mandatory-y">Yes</label>
+							</div>
+							<div class="form-group">
+								<input type="radio" id="speed-limits-mandatory-n" name="detail-red-ring-mandatory">
+								<label for="speed-limits-mandatory-n">No</label>
+							</div>
+							<div class="form-group">
+								<input type="radio" id="speed-limits-mandatory-ns" name="detail-red-ring-mandatory">
+								<label for="speed-limits-mandatory-ns">Not sure</label>
+							</div>
+						</div>
+					</div>
+					<div class="form-input">
+						<h3>4. Speed limits are often lowered to ease congestion; from your experience do you feel this approach works?</h3>
+						<div class="form-options form-options--spread">
+							<div class="form-group">
+								<input type="radio" id="detail-4-strongly-agree" name="detail-4">
+								<label for="detail-4-strongly-agree">Strongly Agree</label>
+							</div>
+							<div class="form-group">
+								<input type="radio" id="detail-4-agree" name="detail-4">
+								<label for="detail-4-agree">Agree</label>
+							</div>
+							<div class="form-group">
+								<input type="radio" id="detail-4-undecided" name="detail-4">
+								<label for="detail-4-undecided">Undecided</label>
+							</div>
+							<div class="form-group">
+								<input type="radio" id="detail-4-disagree" name="detail-4">
+								<label for="detail-4-disagree">Disagree</label>
+							</div>
+							<div class="form-group">
+								<input type="radio" id="detail-4-strongly-disagree" name="detail-4">
+								<label for="detail-4-strongly-disagree">Strongly Disagree</label>
+							</div>
+						</div>
+					</div>
+					<div class="form-input">
+						<h3>5. The following drawing shows a possible circumstance on a Smart Motorway, which lanes are appropriate for use?
+							<small>(You can choose more than one)</small>
+						</h3>
+						<div class="form-options form-options--spread">
+							<div class="form-group">
+								<input type="checkbox" id="detail-5-1" name="detail-5">
+								<label for="detail-5-1">
+									<img src="https://placeimg.com/200/200/any">A</label>
+							</div>
+							<div class="form-group">
+								<input type="checkbox" id="detail-5-2" name="detail-5">
+								<label for="detail-5-2">
+									<img src="https://placeimg.com/200/200/any">B</label>
+							</div>
+							<div class="form-group">
+								<input type="checkbox" id="detail-5-3" name="detail-5">
+								<label for="detail-5-3">
+									<img src="https://placeimg.com/200/200/any">C</label>
+							</div>
+							<div class="form-group">
+								<input type="checkbox" id="detail-5-4" name="detail-5">
+								<label for="detail-5-4">
+									<img src="https://placeimg.com/200/200/any">D</label>
+							</div>
+							<div class="form-group">
+								<input type="checkbox" id="detail-5-5" name="detail-5">
+								<label for="detail-5-5">
+									<img src="https://placeimg.com/200/200/any">All</label>
+							</div>
+						</div>
+					</div>
+					<div class="form-input">
+						<h3>6. The following drawing shows a possible circumstance on a Smart Motorway, which lanes are appropriate for use?
+							<small>(You can choose more than one)</small>
+						</h3>
+						<div class="form-options form-options--spread">
+							<div class="form-group">
+								<input type="checkbox" id="detail-6-1" name="detail-6">
+								<label for="detail-6-1">
+									<img src="https://placeimg.com/200/200/people">A</label>
+							</div>
+							<div class="form-group">
+								<input type="checkbox" id="detail-6-2" name="detail-6">
+								<label for="detail-6-2">
+									<img src="https://placeimg.com/200/200/people">B</label>
+							</div>
+							<div class="form-group">
+								<input type="checkbox" id="detail-6-3" name="detail-6">
+								<label for="detail-6-3">
+									<img src="https://placeimg.com/200/200/people">C</label>
+							</div>
+							<div class="form-group">
+								<input type="checkbox" id="detail-6-4" name="detail-6">
+								<label for="detail-6-4">
+									<img src="https://placeimg.com/200/200/people">D</label>
+							</div>
+							<div class="form-group">
+								<input type="checkbox" id="detail-6-5" name="detail-6">
+								<label for="detail-6-5">
+									<img src="https://placeimg.com/200/200/people">All</label>
+							</div>
+						</div>
+					</div>
+					<div class="form-input">
+						<h3>7. The following drawing shows a possible circumstance on a Smart Motorway, which lanes are appropriate for use?
+							<small>(You can choose more than one)</small>
+						</h3>
+						<div class="form-options form-options--spread">
+							<div class="form-group">
+								<input type="checkbox" id="detail-7-1" name="detail-7">
+								<label for="detail-7-1">
+									<img src="https://placeimg.com/200/200/tech">A</label>
+							</div>
+							<div class="form-group">
+								<input type="checkbox" id="detail-7-2" name="detail-7">
+								<label for="detail-7-2">
+									<img src="https://placeimg.com/200/200/tech">B</label>
+							</div>
+							<div class="form-group">
+								<input type="checkbox" id="detail-7-3" name="detail-7">
+								<label for="detail-7-3">
+									<img src="https://placeimg.com/200/200/tech">C</label>
+							</div>
+							<div class="form-group">
+								<input type="checkbox" id="detail-7-4" name="detail-7">
+								<label for="detail-7-4">
+									<img src="https://placeimg.com/200/200/tech">D</label>
+							</div>
+							<div class="form-group">
+								<input type="checkbox" id="detail-7-5" name="detail-7">
+								<label for="detail-7-5">
+									<img src="https://placeimg.com/200/200/tech">All</label>
+							</div>
+						</div>
+					</div>
+					<div class="form-input">
+						<h3>8. Emergency Refuge Areas (ERAs) are provided where there is no hard shoulder</h3>
+						<div class="form-options">
+							<div class="form-group">
+								<input type="radio" id="detail-8-1" name="detail-8">
+								<label for="detail-8-1">I knew that</label>
+							</div>
+							<div class="form-group">
+								<input type="radio" id="detail-8-2" name="detail-8">
+								<label for="detail-8-2">I would have guessed that.</label>
+							</div>
+							<div class="form-group">
+								<input type="radio" id="detail-8-3" name="detail-8">
+								<label for="detail-8-3">I don’t know</label>
+							</div>
+							<div class="form-group">
+								<input type="radio" id="detail-8-4" name="detail-8">
+								<label for="detail-8-4">I did not know that</label>
+							</div>
+						</div>
+					</div>
+					<div class="form-input">
+						<h3>9. Which of the following uses of an Emergency Refuge Area are appropriate?
+							<small>(You can choose more than one)</small>
+						</h3>
+						<div class="form-options">
+							<div class="form-group">
+								<input type="checkbox" id="detail-9-1" name="detail-9">
+								<label for="detail-9-1">Child sick in rear seats</label>
+							</div>
+							<div class="form-group">
+								<input type="checkbox" id="detail-9-2" name="detail-9">
+								<label for="detail-9-2">Brief phone call</label>
+							</div>
+							<div class="form-group">
+								<input type="checkbox" id="detail-9-3" name="detail-9">
+								<label for="detail-9-3">Orange engine warning on dash</label>
+							</div>
+							<div class="form-group">
+								<input type="checkbox" id="detail-9-4" name="detail-9">
+								<label for="detail-9-4">Await vehicle recovery</label>
+							</div>
+							<div class="form-group">
+								<input type="checkbox" id="detail-9-5" name="detail-9">
+								<label for="detail-9-5">Short sleep</label>
+							</div>
+						</div>
+					</div>
+					<div class="form-input">
+						<h3>10. If you stop in an Emergency Refuge Area (ERA) and want to rejoin the motorway, what should you do?</h3>
+						<div class="form-options">
+							<div class="form-group">
+								<input type="radio" id="detail-10-1" name="detail-10">
+								<label for="detail-10-1">Reverse to back of ERA and accelerate hard to match road speed</label>
+							</div>
+							<div class="form-group">
+								<input type="radio" id="detail-10-2" name="detail-10">
+								<label for="detail-10-2">Wait for a safe gap in traffic and slot in</label>
+							</div>
+							<div class="form-group">
+								<input type="radio" id="detail-10-3" name="detail-10">
+								<label for="detail-10-3">Use telephone provided to call Highways England and wait for them to close the lane</label>
+							</div>
+						</div>
+					</div>
+					<div class="form-input">
+						<h3>11. In reference to the information on overhead gantries, do you feel Smart Motorways are adequately monitored?</h3>
+						<div class="form-options form-options--spread">
+							<div class="form-group">
+								<input type="radio" id="detail-11-strongly-agree" name="detail-11">
+								<label for="detail-11-strongly-agree">Strongly Agree</label>
+							</div>
+							<div class="form-group">
+								<input type="radio" id="detail-11-agree" name="detail-11">
+								<label for="detail-11-agree">Agree</label>
+							</div>
+							<div class="form-group">
+								<input type="radio" id="detail-11-undecided" name="detail-11">
+								<label for="detail-11-undecided">Undecided</label>
+							</div>
+							<div class="form-group">
+								<input type="radio" id="detail-11-disagree" name="detail-11">
+								<label for="detail-11-disagree">Disagree</label>
+							</div>
+							<div class="form-group">
+								<input type="radio" id="detail-11-strongly-disagree" name="detail-11">
+								<label for="detail-11-strongly-disagree">Strongly Disagree</label>
+							</div>
+						</div>
+					</div>
+					<div class="form-input">
+						<h3>12. Smart Motorways have variable message boards, displaying information such as journey time to a junction, or accident
+							ahead, do you feel this information is accurate and informative?</h3>
+						<div class="form-options form-options--spread">
+							<div class="form-group">
+								<input type="radio" id="detail-12-strongly-agree" name="detail-12">
+								<label for="detail-12-strongly-agree">Strongly Agree</label>
+							</div>
+							<div class="form-group">
+								<input type="radio" id="detail-12-agree" name="detail-12">
+								<label for="detail-12-agree">Agree</label>
+							</div>
+							<div class="form-group">
+								<input type="radio" id="detail-12-undecided" name="detail-12">
+								<label for="detail-12-undecided">Undecided</label>
+							</div>
+							<div class="form-group">
+								<input type="radio" id="detail-12-disagree" name="detail-12">
+								<label for="detail-12-disagree">Disagree</label>
+							</div>
+							<div class="form-group">
+								<input type="radio" id="detail-12-strongly-disagree" name="detail-12">
+								<label for="detail-12-strongly-disagree">Strongly Disagree</label>
+							</div>
+						</div>
+					</div>
+				</fieldset>
+
+				<fieldset id="additional">
+					<p>If you have any comments or concerns you would like to add regarding Smart Motorways, please do so in the box below.
+						All responses will be treated with confidentiality.</p>
+					<textarea name="" id="" cols="30" rows="10"></textarea>
+				</fieldset>
+
+				<button type="submit">Submit</button>
+			</form>
+
+			<h2>Thanks</h2>
+			<div class="content font-mid">
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet tempore, nostrum iusto minus modi illo tempora. Accusamus
+					amet aliquam consequatur corrupti, fugiat eos ex obcaecati adipisci eligendi sint temporibus repellat!</p>
+			</div>
+			<form action="">
+				<fieldset class="condensed">
+					<div class="form-input">
+						<div class="form-group form-group--stack form-group--stack-half">
+							<label for="collection-email">Your Email Address</label>
+							<input id="collection-email" name="collection-email" type="email">
+						</div>
+					</div>
+				</fieldset>
+				<button type="submit">Submit</button>
+			</form>
+		</div>
+	</main>
+
+	<footer>
+		<div class="container">
+			<p>2017 - Edward Crowther</p>
+		</div>
+	</footer>
+
+</body>
+
+</html>

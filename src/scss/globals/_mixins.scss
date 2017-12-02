@@ -1,0 +1,17 @@
+@mixin clearfix {
+	&:before,
+	&:after {
+		content: "";
+		display: table;
+		clear: both;
+	}
+}
+
+@mixin box-shadow($position: "bottom") {
+	@if $position=="top" {
+		box-shadow: $box-shadow--top;
+	}
+	@else {
+		box-shadow: $box-shadow--bottom;
+	}
+}
