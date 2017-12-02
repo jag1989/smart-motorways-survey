@@ -7,6 +7,10 @@ body {
 	min-width: 320px;
 }
 
+[v-cloak] {
+	display: none;
+}
+
 h1,
 h2,
 h3 {
