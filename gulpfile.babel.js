@@ -11,6 +11,10 @@ import imagemin from 'gulp-imagemin'
 import clean from 'gulp-clean';
 import postcss from 'gulp-postcss';
 import reporter from 'postcss-reporter';
+import babel from 'gulp-babel';
+import concat from 'gulp-concat';
+import order from 'gulp-order';
+import uglify from 'gulp-uglify';
 
 // CSS parsing and compression
 
@@ -54,6 +58,29 @@ gulp.task('imagemin', ['clean-images-dir'], () => {
 		.pipe(gulp.dest('./assets/images'));
 });
 
+gulp.task('js', ['js-vendor'], () => {
+	return gulp.src(['src/js/**/*.js', '!src/js/vendor/**/*.min.js'])
+		.pipe(order([
+			'inputHandler.js',
+			'private.js',
+			'submissionHandler.js'
+		]))
+		.pipe(babel())
+		.pipe(concat('built-scripts.js'))
+		.pipe(uglify({
+			mangle: false
+		}))
+		.pipe(dest('assets/js', {
+			ext: '.min.js'
+		}))
+		.pipe(gulp.dest('./'));
+});
+
+gulp.task('js-vendor', ['clean-js-dir'], () => {
+	return gulp.src(['src/js/vendor/*.min.js'])
+		.pipe(gulp.dest('./assets/js'));
+})
+
 
 // Clean up directories
 
@@ -71,8 +98,16 @@ gulp.task('clean-images-dir', () => {
 		.pipe(clean());
 });
 
-gulp.task('watch', ['css'], function () {
-	return gulp.watch(['src/scss/**/*.scss'], ['css']);
+gulp.task('clean-js-dir', () => {
+	return gulp.src('assets/js', {
+			read: false
+		})
+		.pipe(clean());
+});
+
+gulp.task('watch', ['css', 'js'], function () {
+	gulp.watch(['src/scss/**/*.scss'], ['css']);
+	gulp.watch(['src/js/**/*.js'], ['js']);
 });
 
 // Run Tasks
