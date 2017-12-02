@@ -59,7 +59,7 @@ gulp.task('imagemin', ['clean-images-dir'], () => {
 });
 
 gulp.task('js', ['js-vendor'], () => {
-	return gulp.src(['src/js/**/*.js', '!src/js/vendor/**/*.min.js'])
+	return gulp.src(['src/js/**/*.js', '!src/js/vendor/**/*.js'])
 		.pipe(order([
 			'inputHandler.js',
 			'private.js',
@@ -77,7 +77,7 @@ gulp.task('js', ['js-vendor'], () => {
 });
 
 gulp.task('js-vendor', ['clean-js-dir'], () => {
-	return gulp.src(['src/js/vendor/*.min.js'])
+	return gulp.src(['src/js/vendor/*.js'])
 		.pipe(gulp.dest('./assets/js'));
 })
 
