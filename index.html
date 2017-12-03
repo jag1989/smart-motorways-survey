@@ -654,8 +654,8 @@
 				<button type="submit" id="primary-form-submit" v-on:click.prevent="onPrimarySubmission" :disabled="this.validating">Submit</button>
 			</form>
 
-			<form class="final-step" v-cloak v-show="this.successfulSubmission">
-				<h2>Thanks</h2>
+			<form class="final-step" v-cloak v-show="this.showSuccess">
+				<h2>Thank you</h2>
 				<div class="content font-mid">
 					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet tempore, nostrum iusto minus modi illo tempora. Accusamus
 						amet aliquam consequatur corrupti, fugiat eos ex obcaecati adipisci eligendi sint temporibus repellat!</p>
