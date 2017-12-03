@@ -33,8 +33,9 @@
 					ipsum voluptatibus optio culpa quos inventore at maxime enim, aliquam labore praesentium quae. Consectetur, fugit?</p>
 			</div>
 
-			<form id="smart-motorways-questionnaire" v-show="!this.successfulSubmission">
+			<form id="smart-motorways-questionnaire" v-show="this.showPrimaryForm">
 
+				<p class="error" id="error-messages" v-cloak v-show="this.showValidationErrorMessage">Please select an answer for all questions.</p>
 				<fieldset id="personal">
 					<h2>About You</h2>
 					<div class="form-input">
