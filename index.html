@@ -651,7 +651,7 @@
 					<textarea name="additional-comments" id="additional-comments" cols="30" rows="10"></textarea>
 				</fieldset>
 
-				<button type="submit" id="primary-form-submit" v-on:click.prevent="onPrimarySubmission">Submit</button>
+				<button type="submit" id="primary-form-submit" v-on:click.prevent="onPrimarySubmission" :disabled="this.validating">Submit</button>
 			</form>
 
 			<form class="final-step" v-cloak v-show="this.successfulSubmission">
