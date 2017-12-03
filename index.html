@@ -41,15 +41,15 @@
 						<h3>1. Do you hold a valid driving licence?</h3>
 						<div class="form-options">
 							<div class="form-group">
-								<input type="radio" id="uk-license-y" name="uk-license-holder">
+								<input type="radio" id="uk-license-y" value="yes" name="uk-license-holder">
 								<label for="uk-license-y">Yes</label>
 							</div>
 							<div class="form-group">
-								<input type="radio" id="uk-license-n" name="uk-license-holder">
+								<input type="radio" id="uk-license-n" value="no" name="uk-license-holder">
 								<label for="uk-license-n">No</label>
 							</div>
 							<div class="form-group">
-								<input type="radio" id="foreign-license" name="uk-license-holder">
+								<input type="radio" id="foreign-license" value="foreign license" name="uk-license-holder">
 								<label for="foreign-license">Foreign license valid in UK</label>
 							</div>
 						</div>
@@ -58,11 +58,11 @@
 						<h3>2. Are you a resident of the UK?</h3>
 						<div class="form-options">
 							<div class="form-group">
-								<input type="radio" id="uk-resident-y" name="uk-resident">
+								<input type="radio" id="uk-resident-y" value="yes" name="uk-resident">
 								<label for="uk-resident-y">Yes</label>
 							</div>
 							<div class="form-group">
-								<input type="radio" id="uk-resident-n" name="uk-resident">
+								<input type="radio" id="uk-resident-n" value="no" name="uk-resident">
 								<label for="uk-resident-y">No</label>
 							</div>
 						</div>
@@ -126,19 +126,19 @@
 						<h3>4. How old are you?</h3>
 						<div class="form-options">
 							<div class="form-group">
-								<input type="radio" id="age-range-1" name="personal-age">
+								<input type="radio" id="age-range-1" value="17-24" name="personal-age">
 								<label for="age-range-1">17 - 24</label>
 							</div>
 							<div class="form-group">
-								<input type="radio" id="age-range-2" name="personal-age">
+								<input type="radio" id="age-range-2" value="25-44" name="personal-age">
 								<label for="age-range-2">25 - 44</label>
 							</div>
 							<div class="form-group">
-								<input type="radio" id="age-range-3" name="personal-age">
+								<input type="radio" id="age-range-3" value="45-64" name="personal-age">
 								<label for="age-range-3">45 - 64</label>
 							</div>
 							<div class="form-group">
-								<input type="radio" id="age-range-4" name="personal-age">
+								<input type="radio" id="age-range-4" value="65+" name="personal-age">
 								<label for="age-range-4">65+</label>
 							</div>
 						</div>
@@ -147,23 +147,23 @@
 						<h3>5. How long have you been driving?</h3>
 						<div class="form-options">
 							<div class="form-group">
-								<input type="radio" id="driving-range-1" name="driving-length">
+								<input type="radio" id="driving-range-1" value="0-2" name="driving-length">
 								<label for="driving-range-1">0-2 Years</label>
 							</div>
 							<div class="form-group">
-								<input type="radio" id="driving-range-2" name="driving-length">
+								<input type="radio" id="driving-range-2" value="3-5" name="driving-length">
 								<label for="driving-range-2">3-5 Years</label>
 							</div>
 							<div class="form-group">
-								<input type="radio" id="driving-range-3" name="driving-length">
+								<input type="radio" id="driving-range-3" value="6-8" name="driving-length">
 								<label for="driving-range-3">6-8 Years</label>
 							</div>
 							<div class="form-group">
-								<input type="radio" id="driving-range-4" name="driving-length">
+								<input type="radio" id="driving-range-4" value="9-11" name="driving-length">
 								<label for="driving-range-4">9-11 Years</label>
 							</div>
 							<div class="form-group">
-								<input type="radio" id="driving-range-5" name="driving-length">
+								<input type="radio" id="driving-range-5" value="12+" name="driving-length">
 								<label for="driving-range-5">12+ Years</label>
 							</div>
 						</div>
@@ -172,23 +172,23 @@
 						<h3>6. On average, how many miles per year do you drive?</h3>
 						<div class="form-options">
 							<div class="form-group">
-								<input type="radio" id="personal-6-1" name="miles-per-annum">
+								<input type="radio" id="personal-6-1" value="&lt2000" name="miles-per-annum">
 								<label for="personal-6-1">&lt2,000</label>
 							</div>
 							<div class="form-group">
-								<input type="radio" id="personal-6-2" name="miles-per-annum">
+								<input type="radio" id="personal-6-2" value="2000-5000" name="miles-per-annum">
 								<label for="personal-6-2">2,000 - 5,000</label>
 							</div>
 							<div class="form-group">
-								<input type="radio" id="personal-6-3" name="miles-per-annum">
+								<input type="radio" id="personal-6-3" value="5000-10000" name="miles-per-annum">
 								<label for="personal-6-3">5,000 - 10,000</label>
 							</div>
 							<div class="form-group">
-								<input type="radio" id="personal-6-4" name="miles-per-annum">
+								<input type="radio" id="personal-6-4" value="10000-20000" name="miles-per-annum">
 								<label for="personal-6-4">10,000 - 20,000</label>
 							</div>
 							<div class="form-group">
-								<input type="radio" id="personal-6-5" name="miles-per-annum">
+								<input type="radio" id="personal-6-5" value="20000" name="miles-per-annum">
 								<label for="personal-6-5">20,000+</label>
 							</div>
 						</div>
@@ -201,15 +201,15 @@
 						<h3>1. To your knowledge, have you ever driven on a Smart Motorway?</h3>
 						<div class="form-options">
 							<div class="form-group">
-								<input type="radio" id="general-1-y" name="general-1">
+								<input type="radio" id="general-1-y" value="yes" name="general-1">
 								<label for="general-1-y">Yes</label>
 							</div>
 							<div class="form-group">
-								<input type="radio" id="general-1-n" name="general-1">
+								<input type="radio" id="general-1-n" value="no" name="general-1">
 								<label for="general-1-n">No</label>
 							</div>
 							<div class="form-group">
-								<input type="radio" id="general-1-ns" name="general-1">
+								<input type="radio" id="general-1-ns" value="not sure" name="general-1">
 								<label for="general-1-ns">Not sure</label>
 							</div>
 						</div>
@@ -218,23 +218,23 @@
 						<h3>2. If yes, how often would you say you use a Smart Motorway?</h3>
 						<div class="form-options form-options--spread">
 							<div class="form-group">
-								<input type="radio" id="general-2-often" name="general-2">
+								<input type="radio" id="general-2-often" value="often" name="general-2">
 								<label for="general-2-often">Often</label>
 							</div>
 							<div class="form-group">
-								<input type="radio" id="general-2-sometimes" name="general-2">
+								<input type="radio" id="general-2-sometimes" value="sometimes" name="general-2">
 								<label for="general-2-sometimes">Sometimes</label>
 							</div>
 							<div class="form-group">
-								<input type="radio" id="general-2-rarely" name="general-2">
+								<input type="radio" id="general-2-rarely" value="rarely" name="general-2">
 								<label for="general-2-rarely">Rarely</label>
 							</div>
 							<div class="form-group">
-								<input type="radio" id="general-2-never" name="general-2">
+								<input type="radio" id="general-2-never" value="never" name="general-2">
 								<label for="general-2-never">Never</label>
 							</div>
 							<div class="form-group">
-								<input type="radio" id="general-2-not-sure" name="general-2">
+								<input type="radio" id="general-2-not-sure" value="not sure" name="general-2">
 								<label for="general-2-not-sure">Not sure</label>
 							</div>
 						</div>
@@ -243,23 +243,23 @@
 						<h3>3. Irrespective of your experience on a Smart Motorway, how well would you say you understand their purpose?</h3>
 						<div class="form-options form-options--spread">
 							<div class="form-group">
-								<input type="radio" id="general-3-extremely" name="general-3">
+								<input type="radio" id="general-3-extremely" value="extremely" name="general-3">
 								<label for="general-3-extremely">Extremely</label>
 							</div>
 							<div class="form-group">
-								<input type="radio" id="general-3-very" name="general-3">
+								<input type="radio" id="general-3-very" value="very" name="general-3">
 								<label for="general-3-very">Very</label>
 							</div>
 							<div class="form-group">
-								<input type="radio" id="general-3-moderately" name="general-3">
+								<input type="radio" id="general-3-moderately" value="moderately" name="general-3">
 								<label for="general-3-moderately">Moderately</label>
 							</div>
 							<div class="form-group">
-								<input type="radio" id="general-3-slightly" name="general-3">
+								<input type="radio" id="general-3-slightly" value="slightly" name="general-3">
 								<label for="general-3-slightly">Slightly</label>
 							</div>
 							<div class="form-group">
-								<input type="radio" id="general-3-not-at-all" name="general-3">
+								<input type="radio" id="general-3-not-at-all" value="not at all" name="general-3">
 								<label for="general-3-not-at-all">Not at all</label>
 							</div>
 						</div>
@@ -270,27 +270,27 @@
 						</h3>
 						<div class="form-options form-options--spread">
 							<div class="form-group">
-								<input type="checkbox" id="general-4-1" name="general-4">
+								<input type="checkbox" id="general-4-1" value="no hard shoulder" name="general-4">
 								<label for="general-4-1">
 									<img src="https://placeimg.com/200/200/arch">No hard shoulder, variable speed limits</label>
 							</div>
 							<div class="form-group">
-								<input type="checkbox" id="general-4-2" name="general-4">
+								<input type="checkbox" id="general-4-2" value="permanent" name="general-4">
 								<label for="general-4-2">
 									<img src="https://placeimg.com/200/200/arch">Permanent hard shoulder, advisory speed displays</label>
 							</div>
 							<div class="form-group">
-								<input type="checkbox" id="general-4-3" name="general-4">
+								<input type="checkbox" id="general-4-3" value="occasionally open" name="general-4">
 								<label for="general-4-3">
 									<img src="https://placeimg.com/200/200/arch">Hard shoulder occasionally open during congestion</label>
 							</div>
 							<div class="form-group">
-								<input type="checkbox" id="general-4-4" name="general-4">
+								<input type="checkbox" id="general-4-4" value="permanent" name="general-4">
 								<label for="general-4-4">
 									<img src="https://placeimg.com/200/200/arch">Permanent hard shoulder, variable speed limits</label>
 							</div>
 							<div class="form-group">
-								<input type="checkbox" id="general-4-5" name="general-4">
+								<input type="checkbox" id="general-4-5" value="all" name="general-4">
 								<label for="general-4-5">
 									<img src="https://placeimg.com/200/200/arch">All</label>
 							</div>
@@ -300,23 +300,23 @@
 						<h3>5. Would you say Smart Motorways successfully improve safety?</h3>
 						<div class="form-options form-options--spread">
 							<div class="form-group">
-								<input type="radio" id="general-5-strongly-agree" name="general-5">
+								<input type="radio" id="general-5-strongly-agree" value="strongly agree" name="general-5">
 								<label for="general-5-strongly-agree">Strongly Agree</label>
 							</div>
 							<div class="form-group">
-								<input type="radio" id="general-5-agree" name="general-5">
+								<input type="radio" id="general-5-agree" value="agree" name="general-5">
 								<label for="general-5-agree">Agree</label>
 							</div>
 							<div class="form-group">
-								<input type="radio" id="general-5-undecided" name="general-5">
+								<input type="radio" id="general-5-undecided" value="undecided" name="general-5">
 								<label for="general-5-undecided">Undecided</label>
 							</div>
 							<div class="form-group">
-								<input type="radio" id="general-5-disagree" name="general-5">
+								<input type="radio" id="general-5-disagree" value="disagree" name="general-5">
 								<label for="general-5-disagree">Disagree</label>
 							</div>
 							<div class="form-group">
-								<input type="radio" id="general-5-strongly-disagree" name="general-5">
+								<input type="radio" id="general-5-strongly-disagree" value="strongly disagree" name="general-5">
 								<label for="general-5-strongly-disagree">Strongly Disagree</label>
 							</div>
 						</div>
@@ -325,23 +325,23 @@
 						<h3>6. Would you say Smart Motorways successfully reduce congestion?</h3>
 						<div class="form-options form-options--spread">
 							<div class="form-group">
-								<input type="radio" id="detail-11-strongly-agree" name="detail-11">
+								<input type="radio" id="detail-11-strongly-agree" value="strongly agree" name="detail-11">
 								<label for="detail-11-strongly-agree">Strongly Agree</label>
 							</div>
 							<div class="form-group">
-								<input type="radio" id="detail-11-agree" name="detail-11">
+								<input type="radio" id="detail-11-agree" value="agree" name="detail-11">
 								<label for="detail-11-agree">Agree</label>
 							</div>
 							<div class="form-group">
-								<input type="radio" id="detail-11-undecided" name="detail-11">
+								<input type="radio" id="detail-11-undecided" value="undecided" name="detail-11">
 								<label for="detail-11-undecided">Undecided</label>
 							</div>
 							<div class="form-group">
-								<input type="radio" id="detail-11-disagree" name="detail-11">
+								<input type="radio" id="detail-11-disagree" value="disagree" name="detail-11">
 								<label for="detail-11-disagree">Disagree</label>
 							</div>
 							<div class="form-group">
-								<input type="radio" id="detail-11-strongly-disagree" name="detail-11">
+								<input type="radio" id="detail-11-strongly-disagree" value="strongly disagree" name="detail-11">
 								<label for="detail-11-strongly-disagree">Strongly Disagree</label>
 							</div>
 						</div>
@@ -354,19 +354,19 @@
 						<h3>1. A red X displayed above a lane on the overhead gantries means that lane is closed to traffic</h3>
 						<div class="form-options">
 							<div class="form-group">
-								<input type="radio" id="detail-1-1" name="detail-1">
+								<input type="radio" id="detail-1-1" value="I knew that" name="detail-1">
 								<label for="detail-1-1">I knew that</label>
 							</div>
 							<div class="form-group">
-								<input type="radio" id="detail-1-2" name="detail-1">
-								<label for="detail-1-2">I would have guessed that.</label>
+								<input type="radio" id="detail-1-2" value="I guessed that" name="detail-1">
+								<label for="detail-1-2">I would have guessed that</label>
 							</div>
 							<div class="form-group">
-								<input type="radio" id="detail-1-3" name="detail-1">
+								<input type="radio" id="detail-1-3" value="I don't know" name="detail-1">
 								<label for="detail-1-3">I don’t know</label>
 							</div>
 							<div class="form-group">
-								<input type="radio" id="detail-1-4" name="detail-1">
+								<input type="radio" id="detail-1-4" value="I did not know that" name="detail-1">
 								<label for="detail-1-4">I did not know that</label>
 							</div>
 						</div>
@@ -375,15 +375,15 @@
 						<h3>2. Is driving under a red X against the law?</h3>
 						<div class="form-options">
 							<div class="form-group">
-								<input type="radio" id="red-x-law-y" name="detail-red-x-law">
+								<input type="radio" id="red-x-law-y" value="yes" name="detail-red-x-law">
 								<label for="red-x-law-y">Yes</label>
 							</div>
 							<div class="form-group">
-								<input type="radio" id="red-x-law-n" name="detail-red-x-law">
+								<input type="radio" id="red-x-law-n" value="no" name="detail-red-x-law">
 								<label for="red-x-law-n">No</label>
 							</div>
 							<div class="form-group">
-								<input type="radio" id="red-x-law-ns" name="detail-red-x-law">
+								<input type="radio" id="red-x-law-ns" value="not sure" name="detail-red-x-law">
 								<label for="red-x-law-ns">Not sure</label>
 							</div>
 						</div>
@@ -392,15 +392,15 @@
 						<h3>3. Are speed limits displayed in a red ring are mandatory?</h3>
 						<div class="form-options">
 							<div class="form-group">
-								<input type="radio" id="speed-limits-mandatory-y" name="detail-red-ring-mandatory">
+								<input type="radio" id="speed-limits-mandatory-y" value="yes" name="detail-red-ring-mandatory">
 								<label for="speed-limits-mandatory-y">Yes</label>
 							</div>
 							<div class="form-group">
-								<input type="radio" id="speed-limits-mandatory-n" name="detail-red-ring-mandatory">
+								<input type="radio" id="speed-limits-mandatory-n" value="no" name="detail-red-ring-mandatory">
 								<label for="speed-limits-mandatory-n">No</label>
 							</div>
 							<div class="form-group">
-								<input type="radio" id="speed-limits-mandatory-ns" name="detail-red-ring-mandatory">
+								<input type="radio" id="speed-limits-mandatory-ns" value="not sure" name="detail-red-ring-mandatory">
 								<label for="speed-limits-mandatory-ns">Not sure</label>
 							</div>
 						</div>
@@ -409,23 +409,23 @@
 						<h3>4. Speed limits are often lowered to ease congestion; from your experience do you feel this approach works?</h3>
 						<div class="form-options form-options--spread">
 							<div class="form-group">
-								<input type="radio" id="detail-4-strongly-agree" name="detail-4">
+								<input type="radio" id="detail-4-strongly-agree" value="strongly agree" name="detail-4">
 								<label for="detail-4-strongly-agree">Strongly Agree</label>
 							</div>
 							<div class="form-group">
-								<input type="radio" id="detail-4-agree" name="detail-4">
+								<input type="radio" id="detail-4-agree" value="agree" name="detail-4">
 								<label for="detail-4-agree">Agree</label>
 							</div>
 							<div class="form-group">
-								<input type="radio" id="detail-4-undecided" name="detail-4">
+								<input type="radio" id="detail-4-undecided" value="undecided" name="detail-4">
 								<label for="detail-4-undecided">Undecided</label>
 							</div>
 							<div class="form-group">
-								<input type="radio" id="detail-4-disagree" name="detail-4">
+								<input type="radio" id="detail-4-disagree" value="disagree" name="detail-4">
 								<label for="detail-4-disagree">Disagree</label>
 							</div>
 							<div class="form-group">
-								<input type="radio" id="detail-4-strongly-disagree" name="detail-4">
+								<input type="radio" id="detail-4-strongly-disagree" value="strongly disagree" name="detail-4">
 								<label for="detail-4-strongly-disagree">Strongly Disagree</label>
 							</div>
 						</div>
@@ -436,27 +436,27 @@
 						</h3>
 						<div class="form-options form-options--spread">
 							<div class="form-group">
-								<input type="checkbox" id="detail-5-1" name="detail-5">
+								<input type="checkbox" id="detail-5-1" value="option A" name="detail-5">
 								<label for="detail-5-1">
 									<img src="https://placeimg.com/200/200/any">A</label>
 							</div>
 							<div class="form-group">
-								<input type="checkbox" id="detail-5-2" name="detail-5">
+								<input type="checkbox" id="detail-5-2" value="option B" name="detail-5">
 								<label for="detail-5-2">
 									<img src="https://placeimg.com/200/200/any">B</label>
 							</div>
 							<div class="form-group">
-								<input type="checkbox" id="detail-5-3" name="detail-5">
+								<input type="checkbox" id="detail-5-3" value="option C" name="detail-5">
 								<label for="detail-5-3">
 									<img src="https://placeimg.com/200/200/any">C</label>
 							</div>
 							<div class="form-group">
-								<input type="checkbox" id="detail-5-4" name="detail-5">
+								<input type="checkbox" id="detail-5-4" value="option D" name="detail-5">
 								<label for="detail-5-4">
 									<img src="https://placeimg.com/200/200/any">D</label>
 							</div>
 							<div class="form-group">
-								<input type="checkbox" id="detail-5-5" name="detail-5">
+								<input type="checkbox" id="detail-5-5" value="All" name="detail-5">
 								<label for="detail-5-5">
 									<img src="https://placeimg.com/200/200/any">All</label>
 							</div>
@@ -468,27 +468,27 @@
 						</h3>
 						<div class="form-options form-options--spread">
 							<div class="form-group">
-								<input type="checkbox" id="detail-6-1" name="detail-6">
+								<input type="checkbox" id="detail-6-1" value="option A" name="detail-6">
 								<label for="detail-6-1">
 									<img src="https://placeimg.com/200/200/people">A</label>
 							</div>
 							<div class="form-group">
-								<input type="checkbox" id="detail-6-2" name="detail-6">
+								<input type="checkbox" id="detail-6-2" value="option B" name="detail-6">
 								<label for="detail-6-2">
 									<img src="https://placeimg.com/200/200/people">B</label>
 							</div>
 							<div class="form-group">
-								<input type="checkbox" id="detail-6-3" name="detail-6">
+								<input type="checkbox" id="detail-6-3" value="option C" name="detail-6">
 								<label for="detail-6-3">
 									<img src="https://placeimg.com/200/200/people">C</label>
 							</div>
 							<div class="form-group">
-								<input type="checkbox" id="detail-6-4" name="detail-6">
+								<input type="checkbox" id="detail-6-4" value="option D" name="detail-6">
 								<label for="detail-6-4">
 									<img src="https://placeimg.com/200/200/people">D</label>
 							</div>
 							<div class="form-group">
-								<input type="checkbox" id="detail-6-5" name="detail-6">
+								<input type="checkbox" id="detail-6-5" value="All" name="detail-6">
 								<label for="detail-6-5">
 									<img src="https://placeimg.com/200/200/people">All</label>
 							</div>
@@ -500,27 +500,27 @@
 						</h3>
 						<div class="form-options form-options--spread">
 							<div class="form-group">
-								<input type="checkbox" id="detail-7-1" name="detail-7">
+								<input type="checkbox" id="detail-7-1" value="option A" name="detail-7">
 								<label for="detail-7-1">
 									<img src="https://placeimg.com/200/200/tech">A</label>
 							</div>
 							<div class="form-group">
-								<input type="checkbox" id="detail-7-2" name="detail-7">
+								<input type="checkbox" id="detail-7-2" value="option B" name="detail-7">
 								<label for="detail-7-2">
 									<img src="https://placeimg.com/200/200/tech">B</label>
 							</div>
 							<div class="form-group">
-								<input type="checkbox" id="detail-7-3" name="detail-7">
+								<input type="checkbox" id="detail-7-3" value="option C" name="detail-7">
 								<label for="detail-7-3">
 									<img src="https://placeimg.com/200/200/tech">C</label>
 							</div>
 							<div class="form-group">
-								<input type="checkbox" id="detail-7-4" name="detail-7">
+								<input type="checkbox" id="detail-7-4" value="option D" name="detail-7">
 								<label for="detail-7-4">
 									<img src="https://placeimg.com/200/200/tech">D</label>
 							</div>
 							<div class="form-group">
-								<input type="checkbox" id="detail-7-5" name="detail-7">
+								<input type="checkbox" id="detail-7-5" value="All" name="detail-7">
 								<label for="detail-7-5">
 									<img src="https://placeimg.com/200/200/tech">All</label>
 							</div>
@@ -530,19 +530,19 @@
 						<h3>8. Emergency Refuge Areas (ERAs) are provided where there is no hard shoulder</h3>
 						<div class="form-options">
 							<div class="form-group">
-								<input type="radio" id="detail-8-1" name="detail-8">
+								<input type="radio" id="detail-8-1" value="I knew that" name="detail-8">
 								<label for="detail-8-1">I knew that</label>
 							</div>
 							<div class="form-group">
-								<input type="radio" id="detail-8-2" name="detail-8">
+								<input type="radio" id="detail-8-2" value="I would have guessed that" name="detail-8">
 								<label for="detail-8-2">I would have guessed that.</label>
 							</div>
 							<div class="form-group">
-								<input type="radio" id="detail-8-3" name="detail-8">
+								<input type="radio" id="detail-8-3" value="I don't know" name="detail-8">
 								<label for="detail-8-3">I don’t know</label>
 							</div>
 							<div class="form-group">
-								<input type="radio" id="detail-8-4" name="detail-8">
+								<input type="radio" id="detail-8-4" value="I did not know that" name="detail-8">
 								<label for="detail-8-4">I did not know that</label>
 							</div>
 						</div>
@@ -553,23 +553,23 @@
 						</h3>
 						<div class="form-options">
 							<div class="form-group">
-								<input type="checkbox" id="detail-9-1" name="detail-9">
+								<input type="checkbox" id="detail-9-1" value="child sick" name="detail-9">
 								<label for="detail-9-1">Child sick in rear seats</label>
 							</div>
 							<div class="form-group">
-								<input type="checkbox" id="detail-9-2" name="detail-9">
+								<input type="checkbox" id="detail-9-2" value="brief call" name="detail-9">
 								<label for="detail-9-2">Brief phone call</label>
 							</div>
 							<div class="form-group">
-								<input type="checkbox" id="detail-9-3" name="detail-9">
+								<input type="checkbox" id="detail-9-3" value="orange engine warning" name="detail-9">
 								<label for="detail-9-3">Orange engine warning on dash</label>
 							</div>
 							<div class="form-group">
-								<input type="checkbox" id="detail-9-4" name="detail-9">
+								<input type="checkbox" id="detail-9-4" value="vehicle recovery" name="detail-9">
 								<label for="detail-9-4">Await vehicle recovery</label>
 							</div>
 							<div class="form-group">
-								<input type="checkbox" id="detail-9-5" name="detail-9">
+								<input type="checkbox" id="detail-9-5" value="sleep" name="detail-9">
 								<label for="detail-9-5">Short sleep</label>
 							</div>
 						</div>
@@ -578,15 +578,15 @@
 						<h3>10. If you stop in an Emergency Refuge Area (ERA) and want to rejoin the motorway, what should you do?</h3>
 						<div class="form-options">
 							<div class="form-group">
-								<input type="radio" id="detail-10-1" name="detail-10">
+								<input type="radio" id="detail-10-1" value="reverse" name="detail-10">
 								<label for="detail-10-1">Reverse to back of ERA and accelerate hard to match road speed</label>
 							</div>
 							<div class="form-group">
-								<input type="radio" id="detail-10-2" name="detail-10">
+								<input type="radio" id="detail-10-2" value="wait for gap" name="detail-10">
 								<label for="detail-10-2">Wait for a safe gap in traffic and slot in</label>
 							</div>
 							<div class="form-group">
-								<input type="radio" id="detail-10-3" name="detail-10">
+								<input type="radio" id="detail-10-3" value="telephone" name="detail-10">
 								<label for="detail-10-3">Use telephone provided to call Highways England and wait for them to close the lane</label>
 							</div>
 						</div>
@@ -595,23 +595,23 @@
 						<h3>11. In reference to the information on overhead gantries, do you feel Smart Motorways are adequately monitored?</h3>
 						<div class="form-options form-options--spread">
 							<div class="form-group">
-								<input type="radio" id="detail-11-strongly-agree" name="detail-11">
+								<input type="radio" id="detail-11-strongly-agree" value="strongly agree" name="detail-11">
 								<label for="detail-11-strongly-agree">Strongly Agree</label>
 							</div>
 							<div class="form-group">
-								<input type="radio" id="detail-11-agree" name="detail-11">
+								<input type="radio" id="detail-11-agree" value="agree" name="detail-11">
 								<label for="detail-11-agree">Agree</label>
 							</div>
 							<div class="form-group">
-								<input type="radio" id="detail-11-undecided" name="detail-11">
+								<input type="radio" id="detail-11-undecided" value="undecided" name="detail-11">
 								<label for="detail-11-undecided">Undecided</label>
 							</div>
 							<div class="form-group">
-								<input type="radio" id="detail-11-disagree" name="detail-11">
+								<input type="radio" id="detail-11-disagree" value="disagree" name="detail-11">
 								<label for="detail-11-disagree">Disagree</label>
 							</div>
 							<div class="form-group">
-								<input type="radio" id="detail-11-strongly-disagree" name="detail-11">
+								<input type="radio" id="detail-11-strongly-disagree" value="strongly disagree" name="detail-11">
 								<label for="detail-11-strongly-disagree">Strongly Disagree</label>
 							</div>
 						</div>
@@ -621,23 +621,23 @@
 							ahead, do you feel this information is accurate and informative?</h3>
 						<div class="form-options form-options--spread">
 							<div class="form-group">
-								<input type="radio" id="detail-12-strongly-agree" name="detail-12">
+								<input type="radio" id="detail-12-strongly-agree" value="strongly agree" name="detail-12">
 								<label for="detail-12-strongly-agree">Strongly Agree</label>
 							</div>
 							<div class="form-group">
-								<input type="radio" id="detail-12-agree" name="detail-12">
+								<input type="radio" id="detail-12-agree" value="agree" name="detail-12">
 								<label for="detail-12-agree">Agree</label>
 							</div>
 							<div class="form-group">
-								<input type="radio" id="detail-12-undecided" name="detail-12">
+								<input type="radio" id="detail-12-undecided" value="undecided" name="detail-12">
 								<label for="detail-12-undecided">Undecided</label>
 							</div>
 							<div class="form-group">
-								<input type="radio" id="detail-12-disagree" name="detail-12">
+								<input type="radio" id="detail-12-disagree" value="disagree" name="detail-12">
 								<label for="detail-12-disagree">Disagree</label>
 							</div>
 							<div class="form-group">
-								<input type="radio" id="detail-12-strongly-disagree" name="detail-12">
+								<input type="radio" id="detail-12-strongly-disagree" value="strongly disagree" name="detail-12">
 								<label for="detail-12-strongly-disagree">Strongly Disagree</label>
 							</div>
 						</div>
