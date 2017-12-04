@@ -40,11 +40,7 @@ const app = new Vue({
 	watch: {
 		showValidationErrorMessage(changedTo) {
 			if (changedTo == true) {
-				Vue.nextTick().then(() => {
-					document.getElementById("error-messages").scrollIntoView({
-						behavior: "smooth"
-					});
-				});
+				this.scrollErrorsIntoView();
 			}
 		},
 		showSuccess() {
@@ -143,6 +139,8 @@ const app = new Vue({
 
 			if (this.validate()) {
 				this.addSubmission();
+			} else if (this.inputsValid === false && this.showValidationErrorMessage === true) {
+				this.scrollErrorsIntoView();
 			}
 		},
 		onSecondarySubmission() {
@@ -193,6 +191,13 @@ const app = new Vue({
 			}
 
 			return selectedValues;
+		},
+		scrollErrorsIntoView() {
+			Vue.nextTick().then(() => {
+				document.getElementById("error-messages").scrollIntoView({
+					behavior: "smooth"
+				});
+			});
 		}
 	},
 	created() {
