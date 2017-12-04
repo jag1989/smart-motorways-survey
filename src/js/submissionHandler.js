@@ -13,7 +13,7 @@ window.firebase.apikey = API_KEY;
 window.firebase.projectId = PROJECT_ID;
 window.firebase.collection = COLLECTION_NAME;
 
-new Vue({
+const app = new Vue({
 	el: "#survey-app",
 	data: {
 		db: null,
@@ -28,7 +28,9 @@ new Vue({
 		showSuccess: false,
 		isUKDriver: true,
 		isUKResident: true,
-		jsonSubmissionData: {}
+		jsonSubmissionData: {},
+		validLicense: null,
+		residentUK: null
 	},
 	computed: {
 		showValidationErrorMessage() {
@@ -49,6 +51,23 @@ new Vue({
 			this.showPrimaryForm = !this.showPrimaryForm;
 		}
 	},
+		showNonUKMessage(changedTo) {
+			if (changedTo === true) {
+				this.showPrimaryForm = !this.showPrimaryForm;
+			}
+		},
+		validLicense(changedTo) {
+			if (changedTo == 'no') {
+				this.showNonUKMessage = true;
+				this.isUKDriver = false;
+			}
+		},
+		residentUK(changedTo) {
+			if (changedTo == 'no') {
+				this.showNonUKMessage = true;
+				this.isUKResident = false;
+			}
+		}
 	methods: {
 		initDB() {
 			const firebaseCredentials = {
@@ -177,6 +196,15 @@ new Vue({
 		}
 	},
 	created() {
+		$(() => {
+			$('input[name="personal-1"]').on('ifChanged', function (event) {
+				app.$data.validLicense = $(this).val();
+			});
+			$('input[name="personal-2"]').on('ifChanged', function (event) {
+				app.$data.residentUK = $(this).val();
+			});
+		});
+
 		this.initDB();
 	}
 });
