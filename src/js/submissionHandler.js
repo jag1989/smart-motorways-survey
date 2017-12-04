@@ -12,15 +12,16 @@
 window.firebase.apikey = API_KEY;
 window.firebase.projectId = PROJECT_ID;
 window.firebase.collection = COLLECTION_NAME;
+window.firebase.collection_email = COLLECTION_NAME_EMAIL;
 
 const app = new Vue({
 	el: "#survey-app",
 	data: {
 		db: null,
 		dbCollection: window.firebase.collection,
+		dbCollectionEmails: window.firebase.collection_email,
 		dbApiKey: window.firebase.apikey,
 		dbProjectId: window.firebase.projectId,
-		validating: false,
 		inputsValid: false,
 		formWasSubmitted: false,
 		showPrimaryForm: true,
@@ -30,7 +31,10 @@ const app = new Vue({
 		isUKResident: true,
 		jsonSubmissionData: {},
 		validLicense: null,
-		residentUK: null
+		residentUK: null,
+		showEmailCapture: true,
+		submittingPrimary: false,
+		submittingSecondary: false
 	},
 	computed: {
 		showValidationErrorMessage() {
@@ -92,11 +96,17 @@ const app = new Vue({
 				console.log('No DB Connection');
 			}
 		},
-		addSubmission() {
+		addSubmission(dbCollectionName) {
 			if (this.db !== null) {
-				this.db.collection(this.dbCollection).add(this.jsonSubmissionData)
+				this.db.collection(dbCollectionName).add(this.jsonSubmissionData)
 					.then(submissionReference => {
-						this.showSuccess = true;
+						if (this.showSuccess === false) {
+							this.showSuccess = true;
+							this.submittingPrimary = false;
+						} else {
+							this.showEmailCapture = false;
+							this.submittingSecondary = false;
+						}
 					})
 					.catch(error => {
 						console.log(`Error: ${error}`);
@@ -104,6 +114,12 @@ const app = new Vue({
 			} else {
 				console.log('No DB Connection');
 			}
+		},
+		addMainSubmission() {
+			this.addSubmission(this.dbCollection);
+		},
+		addSecondarySubmission() {
+			this.addSubmission(this.dbCollectionEmails);
 		},
 		buildSubmissionData() {
 			this.jsonSubmissionData = {
@@ -135,21 +151,29 @@ const app = new Vue({
 				comments: this.getCurrentValueForTextArea('additional-comments')
 			};
 		},
+		buildSecondarySubmissionData() {
+			this.jsonSubmissionData = {
+				email: this.getCurrentValueForTextInput('collection-email')
+			}
+		},
 		onPrimarySubmission() {
 			this.formWasSubmitted = true;
+			this.submittingPrimary = true;
 			this.buildSubmissionData();
 
 			if (this.validate()) {
-				this.addSubmission();
+				this.addMainSubmission();
 			} else if (this.inputsValid === false && this.showValidationErrorMessage === true) {
+				this.submittingPrimary = false;
 				this.scrollErrorsIntoView();
 			}
 		},
 		onSecondarySubmission() {
-			console.log('secondary submission clicked');
+			this.submittingSecondary = true;
+			this.buildSecondarySubmissionData();
+			this.addSecondarySubmission();
 		},
 		validate() {
-			this.validating = true;
 			this.inputsValid = true;
 
 			for (var key in this.jsonSubmissionData) {
@@ -158,7 +182,6 @@ const app = new Vue({
 					break;
 				}
 			}
-			this.validating = false;
 			return this.inputsValid;
 		},
 		getCurrentDate() {
@@ -178,6 +201,9 @@ const app = new Vue({
 			return (document.querySelector(`input[name="${inputName}"]:checked`) !== null) ? document.querySelector(`input[name="${inputName}"]:checked`).value : null;
 		},
 		getCurrentValueForTextArea(inputName) {
+			return (document.getElementById(inputName).value !== null) ? document.getElementById(inputName).value : '';
+		},
+		getCurrentValueForTextInput(inputName) {
 			return (document.getElementById(inputName).value !== null) ? document.getElementById(inputName).value : '';
 		},
 		getCurrentValuesForCheckbox(groupName) {
