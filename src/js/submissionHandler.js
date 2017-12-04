@@ -43,7 +43,8 @@ const app = new Vue({
 				this.scrollErrorsIntoView();
 			}
 		},
-		showSuccess() {
+		showSuccess(changedTo) {
+			if (changedTo === true) {
 			this.showPrimaryForm = !this.showPrimaryForm;
 		}
 	},
@@ -64,6 +65,7 @@ const app = new Vue({
 				this.isUKResident = false;
 			}
 		}
+	},
 	methods: {
 		initDB() {
 			const firebaseCredentials = {
