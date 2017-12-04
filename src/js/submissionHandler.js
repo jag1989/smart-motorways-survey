@@ -178,7 +178,7 @@ const app = new Vue({
 			return (document.querySelector(`input[name="${inputName}"]:checked`) !== null) ? document.querySelector(`input[name="${inputName}"]:checked`).value : null;
 		},
 		getCurrentValueForTextArea(inputName) {
-			return (document.querySelector(`input[name="${inputName}"].value`) !== null) ? document.querySelector(`input[name="${inputName}"].value`) : '';
+			return (document.getElementById(inputName).value !== null) ? document.getElementById(inputName).value : '';
 		},
 		getCurrentValuesForCheckbox(groupName) {
 			const selectedCheckboxes = document.querySelectorAll(`input[name="${groupName}"]:checked`);
