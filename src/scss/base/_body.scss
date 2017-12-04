@@ -109,6 +109,10 @@ button {
 		background-color: darken($primary, 5%);
 		cursor: pointer;
 	}
+	&:disabled {
+		background-color: #808080;
+		cursor: not-allowed;
+	}
 }
 
 fieldset {

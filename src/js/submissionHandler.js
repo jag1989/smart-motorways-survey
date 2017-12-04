@@ -45,9 +45,9 @@ const app = new Vue({
 		},
 		showSuccess(changedTo) {
 			if (changedTo === true) {
-			this.showPrimaryForm = !this.showPrimaryForm;
-		}
-	},
+				this.showPrimaryForm = !this.showPrimaryForm;
+			}
+		},
 		showNonUKMessage(changedTo) {
 			if (changedTo === true) {
 				this.showPrimaryForm = !this.showPrimaryForm;
