@@ -112,4 +112,4 @@ gulp.task('watch', ['css', 'js'], function () {
 
 // Run Tasks
 
-gulp.task('compile', ['css', 'imagemin']);
+gulp.task('compile', ['css', 'js', 'imagemin']);
