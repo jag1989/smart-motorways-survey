@@ -237,6 +237,16 @@ textarea {
 	box-sizing: border-box;
 }
 
+.img-c {
+	margin: 0 auto;
+	display: block;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
 .select2-choices {
 	min-height: 150px;
 	max-height: 150px;
